@@ -1,0 +1,11 @@
+
+@host=https://localhost:8443
+POST {{host}}/ws HTTP/1.1
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <GetDiveDetailsRequest xmlns="http://mikecarr.net/dives">
+            <id>[int]</id>
+        </GetDiveDetailsRequest>
+    </Body>
+</Envelope>
